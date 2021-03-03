@@ -1,11 +1,5 @@
-## My Project
-
-TODO: Fill this README out!
-
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
+# secret-creator-secrets-manager
+The purpose of this project is to enable the creation of multiple secrets in AWS Secrets Manager.
 
 ## Security
 
