@@ -40,11 +40,11 @@ Outputs:
   # Find out more about other implicit resources you can reference within SAM
   # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
   SecretsCreatorAPI:
-    Description: "API Gateway endpoint URL for Prod environment for First Function"
+    Description: "API Gateway endpoint URL for Secrets Creator Lambda Function"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/createsecret/"
   SecretsCreatorFunction:
     Description: "Secrets Creator Lambda Function ARN"
     Value: !GetAtt SecretsCreatorFunction.Arn
   SecretsCreatorFunctionIamRole:
-    Description: "Implicit IAM Role created for secrets creator function"
+    Description: "Implicit IAM Role created for Secrets Creator Lambda Function"
     Value: !GetAtt SecretsCreatorFunctionRole.Arn
